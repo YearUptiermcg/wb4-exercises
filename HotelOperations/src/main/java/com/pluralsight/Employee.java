@@ -13,18 +13,17 @@ public class Employee {
         this.payRate = payRate;
         this.hoursWorked = hoursWorked;
     }
-    public double getTotalPay(){
-        if(hoursWorked > 40){
+
+    public double getTotalPay() {
+        if (hoursWorked > 40) {
             float overtimehours = hoursWorked - 40;
             double regularPay = 40 * payRate;
-            double overtimePay = overtimehours* payRate * 1.5;
+            double overtimePay = overtimehours * payRate * 1.5;
             return regularPay = overtimePay;
-        }
-        else {
+        } else {
             return this.payRate * this.hoursWorked
-        }
-        return 0;
     }
+}
     public float getRegularHours(){
         return 0;
     }
@@ -32,4 +31,3 @@ public class Employee {
         return 0;
     }
 
-   
