@@ -27,4 +27,11 @@ public class Hand {
         return handValue;
     }
 
+    public void DisplayHand() throws Exception {
+        for(Card card: this.cards){
+            card.DisplayCard();
+        }
+        System.out.println("The total is:" + this.getValue());
+    }
+
 }
